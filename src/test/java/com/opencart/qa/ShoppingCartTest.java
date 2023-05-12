@@ -31,7 +31,6 @@ public class ShoppingCartTest extends CommonAPI {
     @Test
     public void TC_SC_01_validateNavigatingToShoppingCartFromSuccessMessage() {
 
-        /***Explicit wait needed***/
 
 
         ShoppingCart shoppingCart = new ShoppingCart();
@@ -49,7 +48,7 @@ public class ShoppingCartTest extends CommonAPI {
     @Test
     public void TC_SC_02_validateNavigatingToShoppingCartFromTheHeaderOption() {
 
-        /***Explicit wait needed***/
+
 
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.searchBarField().sendKeys("imac");
@@ -66,12 +65,10 @@ public class ShoppingCartTest extends CommonAPI {
     @Test
     public void TC_SC_03_validateNavigatingToShoppingCartFromTheFooterOption() {
 
-        /***Explicit wait needed***/
 
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.searchBarField().sendKeys("imac");
         shoppingCart.searchButton().click();
-        shoppingCart.addToCartUnderTheProduct().click();
         shoppingCart.addToCartUnderTheProduct().click();
         shoppingCart.siteMapField().click();
         shoppingCart.shoppingCartUnderSiteMap().click();
@@ -94,7 +91,6 @@ public class ShoppingCartTest extends CommonAPI {
     @Test
     public void TC_SC_05_ValidateNavigatingToShoppingCartPageUsingTheViewCartOptionInTheCartBlock(){
 
-        /***Explicit wait needed***/
 
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.searchBarField().sendKeys("imac");
