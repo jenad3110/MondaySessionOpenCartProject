@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+    <suite name="OpenCart" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="com.opencart.qa.utils.Listeners"/>
+    </listeners>
+    <test name="OpenCart ">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.opencart.qa.ShoppingCartTest"/>
+        </classes>
+    </test>
+<!--    <test name="OpenCart 1">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.opencart.qa.saucedemoTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>

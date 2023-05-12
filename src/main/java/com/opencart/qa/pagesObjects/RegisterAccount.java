@@ -11,6 +11,8 @@ public class RegisterAccount extends CommonAPI {
 
 
 
+
+
     By firstNameField = By.id("input-firstname");
 
     By lastNameField = By.id("input-lastname");
