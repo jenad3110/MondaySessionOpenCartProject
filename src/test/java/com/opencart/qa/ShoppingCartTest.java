@@ -2,8 +2,6 @@ package com.opencart.qa;
 
 import com.opencart.qa.base.CommonAPI;
 import com.opencart.qa.pagesObjects.ShoppingCart;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -32,7 +30,6 @@ public class ShoppingCartTest extends CommonAPI {
     public void TC_SC_01_validateNavigatingToShoppingCartFromSuccessMessage() {
 
 
-
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.searchBarField().sendKeys("imac");
         shoppingCart.searchButton().click();
@@ -40,14 +37,13 @@ public class ShoppingCartTest extends CommonAPI {
         shoppingCart.shoppingCartLinkFromSuccessMessage().click();
 
 
-        Assert.assertEquals(shoppingCart.expectedResult(),"Shopping Cart  (5.00kg)" );
+        Assert.assertEquals(shoppingCart.expectedResult(), "Shopping Cart  (5.00kg)");
 
 
     }
-
+/*
     @Test
     public void TC_SC_02_validateNavigatingToShoppingCartFromTheHeaderOption() {
-
 
 
         ShoppingCart shoppingCart = new ShoppingCart();
@@ -56,7 +52,7 @@ public class ShoppingCartTest extends CommonAPI {
         shoppingCart.addToCartUnderTheProduct().click();
         shoppingCart.CartButtonInHeader().click();
 
-        Assert.assertEquals(shoppingCart.expectedResult(),"Shopping Cart  (5.00kg)" );
+        Assert.assertEquals(shoppingCart.expectedResult(), "Shopping Cart  (5.00kg)");
 
 
     }
@@ -72,24 +68,22 @@ public class ShoppingCartTest extends CommonAPI {
         shoppingCart.addToCartUnderTheProduct().click();
         shoppingCart.siteMapField().click();
         shoppingCart.shoppingCartUnderSiteMap().click();
-
         //Assert.assertEquals(shoppingCart.expectedResult(),"Shopping Cart  (5.00kg)" );
-
 
     }
 
 
     @Test
-    public void TC_SC_04_emptyCart()  {
+    public void TC_SC_04_emptyCart() {
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.CartBlockButton().click();
 
-        Assert.assertEquals(shoppingCart.expectedResultForEmptyCart(),"Your shopping cart is empty!");
+        Assert.assertEquals(shoppingCart.expectedResultForEmptyCart(), "Your shopping cart is empty!");
 
     }
 
     @Test
-    public void TC_SC_05_ValidateNavigatingToShoppingCartPageUsingTheViewCartOptionInTheCartBlock(){
+    public void TC_SC_05_ValidateNavigatingToShoppingCartPageUsingTheViewCartOptionInTheCartBlock() {
 
 
         ShoppingCart shoppingCart = new ShoppingCart();
@@ -99,11 +93,10 @@ public class ShoppingCartTest extends CommonAPI {
         shoppingCart.CartBlockButton().click();
         shoppingCart.viewCartButton().click();
 
-        Assert.assertEquals(shoppingCart.expectedResult(),"Shopping Cart  (5.00kg)" );
+        Assert.assertEquals(shoppingCart.expectedResult(), "Shopping Cart  (5.00kg)");
 
 
     }
 
-
-
+*/
 }

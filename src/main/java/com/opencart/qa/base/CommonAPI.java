@@ -1,19 +1,23 @@
 package com.opencart.qa.base;
 
 import com.opencart.qa.locators.Locator;
+import com.opencart.qa.utils.WebListener;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -23,8 +27,28 @@ import java.util.Date;
 
 public class CommonAPI {
 
+
+    private static final Logger log = LogManager.getLogger(CommonAPI.class);
+
+
+    public static WebListener webListener;
+    EventFiringWebDriver e_driver;
+
     public static WebDriver driver;
 
+    private void setWebListener() {
+
+        e_driver = new EventFiringWebDriver(driver);
+        webListener = new WebListener();
+        e_driver.register(webListener);
+        driver = e_driver;
+    }
+
+    @BeforeClass
+    public void test(){
+
+
+    }
 
 
 
@@ -33,17 +57,24 @@ public class CommonAPI {
     public void setupBrowser(String browserName) {
 
         initializeBrowser(browserName);
+        setWebListener();
+        log.info("Class "+getClass().getSimpleName()+" is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.manage().window().maximize();
+
+
     }
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-
         takeSCForFailedTest(result);
         driver.quit();
+        if (driver ==null){
+            log.info("Driver Closed");
+        }
+        log.info("AfterMethod executed");
 
     }
 
@@ -51,24 +82,31 @@ public class CommonAPI {
     public void initializeBrowser(String browserName) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--remote-allow-origins=*");
-                driver = new ChromeDriver(options);
-            }
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
+            log.info("Browser used is Chrome");
+        }
 
-        else if (browserName.equalsIgnoreCase("firefox"))
+        else if (browserName.equalsIgnoreCase("firefox")){
 
-                driver = new FirefoxDriver();
+            driver = new FirefoxDriver();
+        log.info("Browser used is FireFox");}
 
-            else if (browserName.equalsIgnoreCase("edge"))
+        else if (browserName.equalsIgnoreCase("edge")){
 
-                driver = new EdgeDriver();
+            driver = new EdgeDriver();
+        log.info("Browser used is Edge");}
 
-            else {
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--remote-allow-origins=*");
-                driver = new ChromeDriver(options);
-            }
+        else {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
+            log.warn("Check the syntax of the browser");
+            log.info("Default browser is selected");
+        }
+
+
     }
 
 
@@ -138,13 +176,14 @@ public class CommonAPI {
             throw new RuntimeException(e);
         }
 
+        log.info("Screenshot taken");
     }
 
     public void takeSCForFailedTest(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE)
             takeScreenShot(result);
     }
-    
+
 
 
 
@@ -179,5 +218,4 @@ public class CommonAPI {
 
 
 }
-
 

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="com.opencart.qa.utils.Listeners"></listener>
     </listeners>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrom"/>
 
     <test name="OpenCart ">
         <classes>
