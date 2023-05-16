@@ -37,64 +37,70 @@ public class CommonAPI {
     public static WebDriver driver;
 
     private void setWebListener() {
-
+        log.info("WebListener Method opened");
         e_driver = new EventFiringWebDriver(driver);
         webListener = new WebListener();
         e_driver.register(webListener);
         driver = e_driver;
+        log.info("WebListener Method closed");
     }
 
     @Parameters({"browser"})
     @BeforeMethod
     public void setupBrowser(String browserName) {
 
+        log.info("BeforeMethod opened");
+
         initializeBrowser(browserName);
         setWebListener();
-        log.info("Class "+getClass().getSimpleName()+" is selected");
+        log.info(getClass().getSimpleName()+" Class is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.manage().window().maximize();
 
-
+        log.info("BeforeMethod closed");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result) {
+        log.info("AfterMethod opened");
         takeSCForFailedTest(result);
         driver.quit();
-        log.info("AfterMethod executed");
+        log.info("AfterMethod closed");
 
     }
 
 
     public void initializeBrowser(String browserName) {
+        log.info("Method initializeBrowser opened");
 
         if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
-            log.info("Browser used is Chrome");
+            log.info("Browser used: Chrome");
         }
 
         else if (browserName.equalsIgnoreCase("firefox")){
 
             driver = new FirefoxDriver();
-        log.info("Browser used is FireFox");}
+        log.info("Browser used: FireFox");}
 
         else if (browserName.equalsIgnoreCase("edge")){
 
             driver = new EdgeDriver();
-        log.info("Browser used is Edge");}
+        log.info("Browser used: Edge");}
 
         else {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.warn("Check the syntax of the browser");
-            log.info("Default browser is selected");
+            log.info("Default browser 'Chrome' is selected");
         }
 
+        log.info("Method initializeBrowser closed");
 
     }
 
@@ -151,6 +157,7 @@ public class CommonAPI {
 
 
     public void takeScreenShot(ITestResult result) {
+        log.info("Method takeScreenShot opened");
 
         DateFormat df = new SimpleDateFormat("MMddyyyy");
         Date date = new Date();
@@ -166,6 +173,7 @@ public class CommonAPI {
         }
 
         log.info("Screenshot taken");
+        log.info("Method takeScreenShot closed ");
     }
 
     public void takeSCForFailedTest(ITestResult result) {
