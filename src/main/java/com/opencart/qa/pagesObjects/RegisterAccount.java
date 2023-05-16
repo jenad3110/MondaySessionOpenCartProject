@@ -2,13 +2,12 @@ package com.opencart.qa.pagesObjects;
 
 import com.opencart.qa.base.CommonAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class RegisterAccount extends CommonAPI {
-
-
 
 
     By firstNameField = By.id("input-firstname");
