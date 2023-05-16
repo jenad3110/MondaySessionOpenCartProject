@@ -2,13 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="OpenCart ">
     <listeners>
-        <listener class-name="com.opencart.qa.utils.Listeners"></listener>
+        <listener class-name="com.opencart.qa.utils.Listeners"/>
     </listeners>
     <parameter name="browser" value="chrome"/>
 
     <test name="OpenCart ">
         <classes>
             <class name="com.opencart.qa.ShoppingCartTest"/>
+            <class name="com.opencart.qa.CheckoutTest"/>
+            <class name="com.opencart.qa.LoginTest"/>
         </classes>
     </test>
 </suite>
