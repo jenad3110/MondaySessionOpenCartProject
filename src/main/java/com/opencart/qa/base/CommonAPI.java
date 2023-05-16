@@ -44,14 +44,6 @@ public class CommonAPI {
         driver = e_driver;
     }
 
-    @BeforeClass
-    public void test(){
-
-
-    }
-
-
-
     @Parameters({"browser"})
     @BeforeMethod
     public void setupBrowser(String browserName) {
@@ -71,9 +63,6 @@ public class CommonAPI {
     public void tearDown(ITestResult result) {
         takeSCForFailedTest(result);
         driver.quit();
-        if (driver ==null){
-            log.info("Driver Closed");
-        }
         log.info("AfterMethod executed");
 
     }
