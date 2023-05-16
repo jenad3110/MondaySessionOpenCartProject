@@ -1,4 +1,4 @@
-package com.opencart.qa.utils;
+package com.opencart.qa.pagesObjects;
 
 import com.opencart.qa.base.CommonAPI;
 import com.opencart.qa.base.ParallelTestingCommonAPI;

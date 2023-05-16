@@ -10,9 +10,36 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import java.util.Arrays;
 
-public class WebListener implements WebDriverEventListener {
+    public class WebListener implements WebDriverEventListener {
 
-    private static final Logger log = LogManager.getLogger(WebListener.class);
+            private static final Logger log = LogManager.getLogger(WebListener.class);
+            private String currentStepDescription;
+
+        private void logStep(String stepDescription, WebElement element) {
+            String elementInfo = getElementInfo(element);
+            log.info("{} - Element: {}", stepDescription, elementInfo);
+        }
+
+        private String getElementInfo(WebElement element) {
+            String text = element.toString();
+            String delimiter = "->"; // Multi-character delimiter
+            int startIndex = text.indexOf(delimiter) + delimiter.length(); // Adding the length of the delimiter
+            String partialString = text.substring(startIndex);
+
+                return partialString;
+            }
+
+        @Override
+        public void beforeClickOn(WebElement element, WebDriver driver) {
+            // Set the current step description before clicking on the element
+            currentStepDescription = "Clicking on element";
+        }
+
+        @Override
+        public void afterClickOn(WebElement element, WebDriver driver) {
+            logStep(currentStepDescription, element);
+        }
+
 
     @Override
     public void beforeAlertAccept(WebDriver driver) {
@@ -72,6 +99,7 @@ public class WebListener implements WebDriverEventListener {
     @Override
     public void afterNavigateRefresh(WebDriver driver) {
         log.info("Refreshed the page.");
+
     }
 
     @Override
@@ -83,7 +111,7 @@ public class WebListener implements WebDriverEventListener {
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
         log.info("Found element: {}", by);
     }
-
+/*
     @Override
     public void beforeClickOn(WebElement element, WebDriver driver) {
         // Leave it blank
@@ -92,7 +120,9 @@ public class WebListener implements WebDriverEventListener {
     @Override
     public void afterClickOn(WebElement element, WebDriver driver) {
         log.info("Clicked on element: {}", element);
+
     }
+*/
 
     @Override
     public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
@@ -101,7 +131,8 @@ public class WebListener implements WebDriverEventListener {
 
     @Override
     public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
-        log.info("Changed value of element: {} to: {}", element, Arrays.toString(keysToSend));
+        //log.info("Changed value of element: {} to: {}", element, Arrays.toString(keysToSend));
+        log.info("Changed value of element: {} to: {}","["+getElementInfo(element),Arrays.toString(keysToSend));
     }
 
     @Override
@@ -149,4 +180,14 @@ public class WebListener implements WebDriverEventListener {
 
     }
 
+
+
+
+
 }
+
+
+
+
+
+

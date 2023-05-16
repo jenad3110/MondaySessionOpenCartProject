@@ -15,29 +15,30 @@ import java.lang.reflect.Method;
 public class Listeners implements IAnnotationTransformer, ITestListener {
 
     private static final Logger log = LogManager.getLogger(Listeners.class);
+
     @Override
     public void transform(ITestAnnotation iTestAnnotation, Class aClass, Constructor constructor, Method method) {
-       iTestAnnotation.setRetryAnalyzer(RetryAnalyser.class);
-    }
+        iTestAnnotation.setRetryAnalyzer(RetryAnalyser.class);
+      }
+
     @Override
     public void onTestStart(ITestResult iTestResult) {
-        log.info("Executing Test: "+iTestResult.getName());
-
+        log.info("Executing Test: " + iTestResult.getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-        log.info("Test Passed: "+iTestResult.getName());
+        log.info("Test Passed: " + iTestResult.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        log.warn("Test Failed: "+iTestResult.getName());
+        log.warn("Test Failed: " + iTestResult.getName());
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        log.warn("Test Skipped: "+iTestResult.getName());
+        log.warn("Test Skipped: " + iTestResult.getName());
     }
 
     @Override
