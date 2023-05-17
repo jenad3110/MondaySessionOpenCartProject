@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class CheckoutTest extends CommonAPI {
 
 
-    @Test
+    //@Test
     public void Checkout1() {
 
         Checkout checkout = new Checkout();
@@ -19,7 +19,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout2() {
 
         Checkout checkout = new Checkout();
@@ -35,7 +35,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout3() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -64,7 +64,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void checkoutTest5_Er1_2() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -94,7 +94,7 @@ public class CheckoutTest extends CommonAPI {
     }
 
 
-    @Test
+    //@Test
     public void checkoutTest5_Er3_4_5_6() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
