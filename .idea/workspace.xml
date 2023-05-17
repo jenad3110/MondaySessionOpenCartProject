@@ -4,7 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Make-up">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/TestPageObject.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
@@ -242,7 +241,6 @@
       <option name="project" value="LOCAL" />
       <updated>1684284447181</updated>
     </task>
-
     <task id="LOCAL-00011" summary="Make-up">
       <created>1684288850299</created>
       <option name="number" value="00011" />
