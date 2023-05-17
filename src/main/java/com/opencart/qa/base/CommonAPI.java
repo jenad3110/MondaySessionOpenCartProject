@@ -34,7 +34,7 @@ public class CommonAPI {
     public static WebListener webListener;
     EventFiringWebDriver e_driver;
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     private void setWebListener() {
         log.info("WebListener Method opened");
