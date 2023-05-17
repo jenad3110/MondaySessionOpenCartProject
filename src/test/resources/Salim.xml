@@ -8,7 +8,8 @@
 
     <test name="OpenCart ">
         <classes>
-            <class name="com.opencart.qa.ShoppingCartTest"/>
+            <class name="com.opencart.qa.LoginTest"/>
+            <class name="com.opencart.qa.CheckoutTest"/>
         </classes>
     </test>
 </suite>
