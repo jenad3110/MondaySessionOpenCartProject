@@ -18,7 +18,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -33,8 +32,9 @@ public class CommonAPI {
 
 
     public static WebListener webListener;
-    public static WebDriver driver;
     EventFiringWebDriver e_driver;
+
+    public static WebDriver driver;
 
     private void setWebListener() {
 
@@ -44,6 +44,13 @@ public class CommonAPI {
         driver = e_driver;
     }
 
+    @BeforeClass
+    public void test(){
+
+
+    }
+
+
 
     @Parameters({"browser"})
     @BeforeMethod
@@ -51,7 +58,7 @@ public class CommonAPI {
 
         initializeBrowser(browserName);
         setWebListener();
-        log.info("Class " + getClass().getSimpleName() + " is selected");
+        log.info("Class "+getClass().getSimpleName()+" is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -64,6 +71,9 @@ public class CommonAPI {
     public void tearDown(ITestResult result) {
         takeSCForFailedTest(result);
         driver.quit();
+        if (driver ==null){
+            log.info("Driver Closed");
+        }
         log.info("AfterMethod executed");
 
     }
@@ -76,15 +86,19 @@ public class CommonAPI {
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.info("Browser used is Chrome");
-        } else if (browserName.equalsIgnoreCase("firefox")) {
+        }
+
+        else if (browserName.equalsIgnoreCase("firefox")){
 
             driver = new FirefoxDriver();
-            log.info("Browser used is FireFox");
-        } else if (browserName.equalsIgnoreCase("edge")) {
+        log.info("Browser used is FireFox");}
+
+        else if (browserName.equalsIgnoreCase("edge")){
 
             driver = new EdgeDriver();
-            log.info("Browser used is Edge");
-        } else {
+        log.info("Browser used is Edge");}
+
+        else {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
@@ -171,6 +185,9 @@ public class CommonAPI {
     }
 
 
+
+
+
     private By ByLocatorType(Locator locatorType, String value) {
 
         switch (locatorType) {
@@ -192,11 +209,12 @@ public class CommonAPI {
             case TAGNAME:
                 return By.tagName(value);
 
-        }
-        return null;
+        }return null;
 
 
     }
+
+
 
 
 }

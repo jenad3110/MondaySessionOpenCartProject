@@ -11,5 +11,4 @@
             <class name="com.opencart.qa.ShoppingCartTest"/>
         </classes>
     </test>
-
 </suite>
