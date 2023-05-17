@@ -17,6 +17,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -33,7 +34,7 @@ public class CommonAPI {
     public static WebListener webListener;
     EventFiringWebDriver e_driver;
 
-    public static WebDriver driver;
+    public WebDriver driver;
 
     private void setWebListener() {
         log.info("WebListener Method opened");
@@ -52,7 +53,7 @@ public class CommonAPI {
 
         initializeBrowser(browserName);
         setWebListener();
-        log.info(getClass().getSimpleName()+" Class is selected");
+        log.info(getClass().getSimpleName() + " Class is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -79,19 +80,15 @@ public class CommonAPI {
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.info("Browser used: Chrome");
-        }
-
-        else if (browserName.equalsIgnoreCase("firefox")){
+        } else if (browserName.equalsIgnoreCase("firefox")) {
 
             driver = new FirefoxDriver();
-        log.info("Browser used: FireFox");}
-
-        else if (browserName.equalsIgnoreCase("edge")){
+            log.info("Browser used: FireFox");
+        } else if (browserName.equalsIgnoreCase("edge")) {
 
             driver = new EdgeDriver();
-        log.info("Browser used: Edge");}
-
-        else {
+            log.info("Browser used: Edge");
+        } else {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
@@ -181,9 +178,6 @@ public class CommonAPI {
     }
 
 
-
-
-
     private By ByLocatorType(Locator locatorType, String value) {
 
         switch (locatorType) {
@@ -194,7 +188,7 @@ public class CommonAPI {
                 return By.name(value);
             case PARTIALLINKTEXT:
                 return By.partialLinkText(value);
-            case LINKEDTEXT:
+            case LINKTEXT:
                 return By.linkText(value);
             case CSS:
                 return By.cssSelector(value);
@@ -205,12 +199,11 @@ public class CommonAPI {
             case TAGNAME:
                 return By.tagName(value);
 
-        }return null;
+        }
+        return null;
 
 
     }
-
-
 
 
 }

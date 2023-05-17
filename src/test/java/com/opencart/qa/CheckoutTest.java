@@ -48,7 +48,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout4() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -94,7 +94,7 @@ public class CheckoutTest extends CommonAPI {
     }
 
 
-    //@Test
+    @Test
     public void checkoutTest5_Er3_4_5_6() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -130,6 +130,8 @@ public class CheckoutTest extends CommonAPI {
         checkout.confirmOrder().click();
         String actualResult = checkout.confirmation().getText();
         String expectedResult = "Your order has been successfully processed!";
+
+
         Assert.assertEquals(actualResult, expectedResult);
 
 

@@ -1,7 +1,9 @@
 package com.opencart.qa.pagesObjects;
 
 import com.opencart.qa.base.CommonAPI;
+import com.opencart.qa.base.ParallelTestingCommonAPI;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
@@ -14,7 +16,7 @@ public class Checkout extends CommonAPI {
 
     By searchField = By.xpath("//*[@id='search']/input");
     By searchBtn = By.xpath("//*[@id='search']/span/button");
-    By addToCart = By.xpath("//*[@id='content']/div[3]/div/div/div[2]/div[2]/button[1]/span");
+    By addToCart = By.xpath("//span[contains(text(),'Add to Cart')]");
     By shoppingCart = By.xpath("//*[@id='top-links']/ul/li[4]/a");
     By checkOutBtn = By.xpath("//*[@id='content']/div[3]/div[2]/a");
     By checkoutTxt = By.xpath("//*[@id='content']/h1");
@@ -48,6 +50,7 @@ public class Checkout extends CommonAPI {
     By itemDetails = By.linkText("iMac");
     By confirmOrder = By.id("button-confirm");
     By confirmation = By.xpath("//*[@id='content']/p[1]");
+
 
     //----------------------------------------------------------------------------------//
 
