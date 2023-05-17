@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Make-up">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/TestPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/Checkout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Salim.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Salim.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +39,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="3b95365c-2825-41ad-a3bf-d2213655099c" />
+        <option name="accountId" value="9426d8b5-da81-4f3d-836f-20afb55cdfcf" />
         <option name="url" value="https://github.com/jenad3110/MondaySessionOpenCartProject.git" />
       </UrlAndAccount>
     </option>
@@ -55,7 +52,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Pbm437c8FykJKShRecUkaPmNR1" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -75,7 +72,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,36 +94,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutTest.Checkout3" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.CheckoutTest" />
-      <option name="METHOD_NAME" value="Checkout3" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutTest.checkoutTest5" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.CheckoutTest" />
-      <option name="METHOD_NAME" value="checkoutTest5" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -171,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" />
         <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
         <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
         <item itemvalue="TestNG.LoginTest.Logging" />
-        <item itemvalue="TestNG.CheckoutTest.checkoutTest5" />
-        <item itemvalue="TestNG.CheckoutTest.Checkout3" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684284447181</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Make-up">
+      <created>1684288850299</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684288850299</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
