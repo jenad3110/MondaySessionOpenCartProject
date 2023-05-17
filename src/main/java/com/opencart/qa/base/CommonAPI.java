@@ -26,15 +26,11 @@ import java.time.Duration;
 import java.util.Date;
 
 public class CommonAPI {
-
-
     private static final Logger log = LogManager.getLogger(CommonAPI.class);
 
-
     public static WebListener webListener;
-    EventFiringWebDriver e_driver;
-
     public static WebDriver driver;
+    EventFiringWebDriver e_driver;
 
     private void setWebListener() {
         log.info("WebListener Method opened");
