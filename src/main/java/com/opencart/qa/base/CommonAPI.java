@@ -15,9 +15,9 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -34,78 +34,69 @@ public class CommonAPI {
     public static WebListener webListener;
     EventFiringWebDriver e_driver;
 
-    public static WebDriver driver;
+    public WebDriver driver;
 
     private void setWebListener() {
-
+        log.info("WebListener Method opened");
         e_driver = new EventFiringWebDriver(driver);
         webListener = new WebListener();
         e_driver.register(webListener);
         driver = e_driver;
+        log.info("WebListener Method closed");
     }
-
-    @BeforeClass
-    public void test(){
-
-
-    }
-
-
 
     @Parameters({"browser"})
     @BeforeMethod
     public void setupBrowser(String browserName) {
 
+        log.info("BeforeMethod opened");
+
         initializeBrowser(browserName);
         setWebListener();
-        log.info("Class "+getClass().getSimpleName()+" is selected");
+        log.info(getClass().getSimpleName() + " Class is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.manage().window().maximize();
 
-
+        log.info("BeforeMethod closed");
     }
 
     @AfterMethod
     public void tearDown(ITestResult result) {
+        log.info("AfterMethod opened");
         takeSCForFailedTest(result);
         driver.quit();
-        if (driver ==null){
-            log.info("Driver Closed");
-        }
-        log.info("AfterMethod executed");
+        log.info("AfterMethod closed");
 
     }
 
 
     public void initializeBrowser(String browserName) {
+        log.info("Method initializeBrowser opened");
 
         if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
-            log.info("Browser used is Chrome");
-        }
-
-        else if (browserName.equalsIgnoreCase("firefox")){
+            log.info("Browser used: Chrome");
+        } else if (browserName.equalsIgnoreCase("firefox")) {
 
             driver = new FirefoxDriver();
-        log.info("Browser used is FireFox");}
-
-        else if (browserName.equalsIgnoreCase("edge")){
+            log.info("Browser used: FireFox");
+        } else if (browserName.equalsIgnoreCase("edge")) {
 
             driver = new EdgeDriver();
-        log.info("Browser used is Edge");}
-
-        else {
+            log.info("Browser used: Edge");
+        } else {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.warn("Check the syntax of the browser");
-            log.info("Default browser is selected");
+            log.info("Default browser 'Chrome' is selected");
         }
 
+        log.info("Method initializeBrowser closed");
 
     }
 
@@ -143,7 +134,7 @@ public class CommonAPI {
     public void waitFor(int seconds) {
 
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -162,6 +153,7 @@ public class CommonAPI {
 
 
     public void takeScreenShot(ITestResult result) {
+        log.info("Method takeScreenShot opened");
 
         DateFormat df = new SimpleDateFormat("MMddyyyy");
         Date date = new Date();
@@ -177,15 +169,13 @@ public class CommonAPI {
         }
 
         log.info("Screenshot taken");
+        log.info("Method takeScreenShot closed ");
     }
 
     public void takeSCForFailedTest(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE)
             takeScreenShot(result);
     }
-
-
-
 
 
     private By ByLocatorType(Locator locatorType, String value) {
@@ -198,7 +188,7 @@ public class CommonAPI {
                 return By.name(value);
             case PARTIALLINKTEXT:
                 return By.partialLinkText(value);
-            case LINKEDTEXT:
+            case LINKTEXT:
                 return By.linkText(value);
             case CSS:
                 return By.cssSelector(value);
@@ -209,12 +199,11 @@ public class CommonAPI {
             case TAGNAME:
                 return By.tagName(value);
 
-        }return null;
+        }
+        return null;
 
 
     }
-
-
 
 
 }

@@ -15,7 +15,7 @@ public class ShoppingCart extends CommonAPI {
     By cartBlock = By.id("cart-total");
     By searchButton = By.xpath("//div[@id='search']/span/button");
     By viewCartField = By.xpath("//div[@id='cart']/ul/li[2]/div/p/a/strong");
-    By shoppingCartUnderSiteMap = By.xpath("//*[@id=\"content\"]/div/div[2]/ul/li[3]/a");
+    By shoppingCartUnderSiteMap = By.xpath("//*[@id='content']/div/div[2]/ul/li[3]/a");
     By shoppingCartText = By.xpath("/html/body/div[2]/div/div/h1");
     By siteMapField = By.xpath("/html/body/footer/div/div/div[2]/ul/li[3]/a");
     By shoppingCartEmptyText = By.xpath("/html/body/header/div/div/div[3]/div/ul/li/p");
@@ -50,7 +50,8 @@ public class ShoppingCart extends CommonAPI {
 
     public WebElement shoppingCartEmptyText() {return driver.findElement(shoppingCartEmptyText);}
 
-    public String expectedResult() {return shoppingCartText().getText();}
+    public String expectedResult() {
+        return shoppingCartText().getText();}
 
     public String expectedResultForEmptyCart() {
         return shoppingCartEmptyText().getText();

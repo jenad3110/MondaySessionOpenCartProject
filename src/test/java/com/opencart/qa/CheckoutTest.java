@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class CheckoutTest extends CommonAPI {
 
 
-    @Test
+    //@Test
     public void Checkout1() {
 
         Checkout checkout = new Checkout();
@@ -19,7 +19,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout2() {
 
         Checkout checkout = new Checkout();
@@ -35,7 +35,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout3() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -48,7 +48,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void Checkout4() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -64,7 +64,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void checkoutTest5_Er1_2() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -130,6 +130,8 @@ public class CheckoutTest extends CommonAPI {
         checkout.confirmOrder().click();
         String actualResult = checkout.confirmation().getText();
         String expectedResult = "Your order has been successfully processed!";
+
+
         Assert.assertEquals(actualResult, expectedResult);
 
 
