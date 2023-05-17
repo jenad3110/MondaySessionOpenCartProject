@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Make-up">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/TestPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" afterDir="false" />
-    </list>
+    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Parallel_Testing fixed issue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" />
-        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
         <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
         <item itemvalue="TestNG.LoginTest.Logging" />
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" />
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
+        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +236,6 @@
       <option name="project" value="LOCAL" />
       <updated>1684284447181</updated>
     </task>
-
     <task id="LOCAL-00011" summary="Make-up">
       <created>1684288850299</created>
       <option name="number" value="00011" />
@@ -250,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684288850299</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Parallel_Testing fixed issue">
+      <created>1684335975097</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684335975097</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
