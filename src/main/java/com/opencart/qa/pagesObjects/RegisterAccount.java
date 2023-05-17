@@ -32,8 +32,6 @@ public class RegisterAccount extends CommonAPI {
     //----------------------------------------------------------------------------------//
 
 
-
-
     public WebElement firstNameField() {
 
         return driver.findElement(firstNameField);
@@ -76,8 +74,7 @@ public class RegisterAccount extends CommonAPI {
         return driver.findElement(continueButton);
     }
 
-    public WebElement getActualText()
-    {
+    public WebElement getActualText() {
 
         return driver.findElement(actualResult);
     }
