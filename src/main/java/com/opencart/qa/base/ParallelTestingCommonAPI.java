@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -14,12 +15,12 @@ import java.time.Duration;
 
 public class ParallelTestingCommonAPI {
 
-    private  WebDriver driver;
+    private WebDriver driver;
 
 
-    private  ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
+    private ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
-    public  WebDriver getDriver() {
+    public WebDriver getDriver() {
         return driverThreadLocal.get();
     }
 
@@ -30,8 +31,8 @@ public class ParallelTestingCommonAPI {
         driverThreadLocal.set(driver);
 
 
-        driver.get("https://www.saucedemo.com/");
-        //driver.get("https://tutorialsninja.com/demo/");
+
+        driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.manage().window().maximize();
@@ -68,10 +69,22 @@ public class ParallelTestingCommonAPI {
         return driver;
     }
 
+    public void dropDown(WebElement element, String option) {
 
+        Select select = new Select(element);
+        select.selectByVisibleText(option);
 
+    }
 
+    public void waitFor(int seconds) {
 
+        try {
+            Thread.sleep(seconds * 1000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 }
 
 
