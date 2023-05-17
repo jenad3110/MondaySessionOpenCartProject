@@ -51,7 +51,13 @@ public class Checkout extends CommonAPI {
     By confirmOrder = By.id("button-confirm");
     By confirmation = By.xpath("//*[@id='content']/p[1]");
 
-
+    By billingFirstName = By.id("input-shipping-firstname");
+    By billingLAstName = By.id("input-shipping-lastname");
+    By billingAddress = By.id("input-shipping-address-1");
+    By billingCity = By.id("input-shipping-city");
+    By billingPostCode = By.id("input-shipping-postcode");
+    By billingCountry = By.id("input-shipping-country");
+    By billingState = By.id("input-shipping-zone");
     //----------------------------------------------------------------------------------//
 
 
@@ -202,5 +208,25 @@ public class Checkout extends CommonAPI {
     public WebElement confirmation() {
         return driver.findElement(confirmation);
     }
-
+    public WebElement billingFirstName() {
+        return driver.findElement(billingFirstName);
+    }
+    public WebElement billingLastName() {
+        return driver.findElement(billingLAstName);
+    }
+    public WebElement billingAddress() {
+        return driver.findElement(billingAddress);
+    }
+    public WebElement billingCity() {
+        return driver.findElement(billingCity);
+    }
+    public WebElement billingPostCode() {
+        return driver.findElement(billingPostCode);
+    }
+    public WebElement billingCountry() {
+        return driver.findElement(billingCountry);
+    }
+    public WebElement billingState() {
+        return driver.findElement(billingState);
+    }
 }
