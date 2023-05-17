@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Parallel_Testing fixed issue" />
+    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Parallel_Testing fixed issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/screenshotsFailedTest/checkoutTest5_Er3_4_5_6 05172023.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/screenshotsFailedTest/checkoutTest5_Er3_4_5_6 05172023.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,28 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/mohamed.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.Logging" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.LoginTest" />
-      <option name="METHOD_NAME" value="Logging" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -147,13 +136,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1.checkoutTest5_Er3_4_5_6" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart.qa" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.Test1" />
+      <option name="METHOD_NAME" value="checkoutTest5_Er3_4_5_6" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
-        <item itemvalue="TestNG.LoginTest.Logging" />
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" />
         <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
+        <item itemvalue="TestNG.Test1.checkoutTest5_Er3_4_5_6" />
         <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" />
+        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684335975097</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Parallel_Testing fixed issue">
+      <created>1684336061482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684336061482</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +283,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Make-up" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Parallel_Testing fixed issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parallel_Testing fixed issue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
