@@ -9,16 +9,14 @@
     <test name="OpenCart ">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <!--            <class name="com.opencart.qa.LoginTest"/>-->
-            <class name="com.opencart.qa.CheckoutTest"/>
+            <class name="com.opencart.qa.Test1"/>
         </classes>
     </test>
 
     <test name="OpenCart2 ">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <!--            <class name="com.opencart.qa.LoginTest"/>-->
-            <class name="com.opencart.qa.CheckoutTest"/>
+            <class name="com.opencart.qa.Test1"/>
         </classes>
     </test>
 
