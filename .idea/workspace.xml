@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Make-up">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/TestPageObject.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
@@ -62,8 +63,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Salim&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hebib/MyLearning/Selenium_Learning&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
@@ -239,6 +242,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684284447181</updated>
     </task>
+
     <task id="LOCAL-00011" summary="Make-up">
       <created>1684288850299</created>
       <option name="number" value="00011" />
@@ -264,7 +268,8 @@
     <MESSAGE value="Test" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Make-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make-up" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
