@@ -15,11 +15,14 @@ import java.lang.reflect.Method;
 public class Listeners implements IAnnotationTransformer, ITestListener {
 
     private static final Logger log = LogManager.getLogger(Listeners.class);
+    public String reRunFailedTest = "false";
 
     @Override
     public void transform(ITestAnnotation iTestAnnotation, Class aClass, Constructor constructor, Method method) {
-        iTestAnnotation.setRetryAnalyzer(RetryAnalyser.class);
-      }
+        if (reRunFailedTest.equalsIgnoreCase("true")) {
+            iTestAnnotation.setRetryAnalyzer(RetryAnalyser.class);
+        }
+    }
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
