@@ -26,15 +26,11 @@ import java.time.Duration;
 import java.util.Date;
 
 public class CommonAPI {
-
-
     private static final Logger log = LogManager.getLogger(CommonAPI.class);
 
-
     public static WebListener webListener;
-    EventFiringWebDriver e_driver;
-
     public static WebDriver driver;
+    EventFiringWebDriver e_driver;
 
     private void setWebListener() {
         log.info("WebListener Method opened");
@@ -75,12 +71,16 @@ public class CommonAPI {
     public void initializeBrowser(String browserName) {
         log.info("Method initializeBrowser opened");
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
         if (browserName.equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.info("Browser used: Chrome");
+
         } else if (browserName.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.firefox.logfile", "/dev/null");
+            System.setProperty("webdriver.firefox.loglevel", "OFF");
 
             driver = new FirefoxDriver();
             log.info("Browser used: FireFox");
@@ -89,8 +89,6 @@ public class CommonAPI {
             driver = new EdgeDriver();
             log.info("Browser used: Edge");
         } else {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.warn("Check the syntax of the browser");
             log.info("Default browser 'Chrome' is selected");

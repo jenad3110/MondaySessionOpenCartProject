@@ -16,8 +16,6 @@ import java.time.Duration;
 public class ParallelTestingCommonAPI {
 
     private WebDriver driver;
-
-
     private ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
     public WebDriver getDriver() {

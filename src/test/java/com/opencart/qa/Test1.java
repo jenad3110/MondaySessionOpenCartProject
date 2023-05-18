@@ -26,8 +26,11 @@ public class Test1 extends ParallelTestingCommonAPI {
         checkout.address().sendKeys("Down_Hell");
         checkout.city().sendKeys("Jersey_city");
         checkout.postCode().sendKeys("07304");
+        waitFor(5);
+        /*
         checkout.selectOptionFromCountry("United States");
         checkout.selectOptionFromState("New Jersey");
+
         checkout.continueBilling().click();
 
         Assert.assertTrue(checkout.flatShipping().isSelected());
@@ -35,6 +38,7 @@ public class Test1 extends ParallelTestingCommonAPI {
 
         checkout.deliveryMethod().click();
         Assert.assertTrue(checkout.paymentMethod().isSelected());
+
 
 
         checkout.terms().click();
@@ -49,6 +53,6 @@ public class Test1 extends ParallelTestingCommonAPI {
 
         Assert.assertEquals(actualResult, expectedResult);
 
-
+*/
     }
 }

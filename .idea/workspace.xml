@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Make-up">
+
+    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="review plugins in the pom xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,28 +106,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/mohamed.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.Logging" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.LoginTest" />
-      <option name="METHOD_NAME" value="Logging" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,13 +134,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1.checkoutTest5_Er3_4_5_6" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart.qa" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.Test1" />
+      <option name="METHOD_NAME" value="checkoutTest5_Er3_4_5_6" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" />
         <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/runner.xml" />
-        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
+        <item itemvalue="TestNG.Test1.checkoutTest5_Er3_4_5_6" />
         <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
-        <item itemvalue="TestNG.LoginTest.Logging" />
+        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -245,14 +248,42 @@
       <option name="project" value="LOCAL" />
       <updated>1684288850299</updated>
     </task>
-    <task id="LOCAL-00012" summary="Make-up">
-      <created>1684344746527</created>
+    <task id="LOCAL-00012" summary="Parallel_Testing fixed issue">
+      <created>1684335975097</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1684344746527</updated>
+      <updated>1684335975097</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Parallel_Testing fixed issue">
+      <created>1684336061482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684336061482</updated>
+    </task>
+    <task id="LOCAL-00014" summary="review plugins in the pom xml">
+      <created>1684428839289</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684428839289</updated>
+    </task>
+    <task id="LOCAL-00015" summary="review plugins in the pom xml">
+      <created>1684429085144</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684429085144</updated>
+    </task>
+    <task id="LOCAL-00016" summary="review plugins in the pom xml">
+      <created>1684429165548</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1684429165548</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +303,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Make-up" />
     <option name="LAST_COMMIT_MESSAGE" value="Make-up" />
+
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
