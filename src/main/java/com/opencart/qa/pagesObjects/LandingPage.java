@@ -10,19 +10,9 @@ public class LandingPage extends CommonAPI {
     By myAccountButton = By.xpath("//div[@id='top-links']/ul/li[2]/a/span");
     By loginButton = By.linkText("Login");
 
-    public WebElement myAccountField() {
-
-        return driver.findElement(myAccountButton);
-    }
-
-    public WebElement registerButton() {
-
-        return driver.findElement(registerButton);
-    }
-    public WebElement loginButton() {
-
-        return driver.findElement(loginButton);
-    }
+    public WebElement myAccountField() {return driver.findElement(myAccountButton);}
+    public WebElement registerButton() {return driver.findElement(registerButton);}
+    public WebElement loginButton() {return driver.findElement(loginButton);}
 
 
 }
