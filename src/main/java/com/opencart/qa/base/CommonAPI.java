@@ -63,6 +63,7 @@ public class CommonAPI {
         log.info("AfterMethod opened");
         takeSCForFailedTest(result);
         driver.quit();
+        log.info("driver quit method executed ");
         log.info("AfterMethod closed");
 
     }
