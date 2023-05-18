@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class CheckoutTest extends CommonAPI {
 
 
-    //@Test
+    @Test(enabled = false)
     public void Checkout1() {
 
         Checkout checkout = new Checkout();
@@ -19,7 +19,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    //@Test
+    @Test(enabled = false)
     public void Checkout2() {
 
         Checkout checkout = new Checkout();
@@ -35,7 +35,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    //@Test
+    @Test(enabled = false)
     public void Checkout3() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -48,7 +48,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    //@Test
+    @Test(enabled = false)
     public void Checkout4() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -64,7 +64,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    //@Test
+    @Test(enabled = false)
     public void checkoutTest5_Er1_2() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -94,8 +94,9 @@ public class CheckoutTest extends CommonAPI {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void checkoutTest5_Er3_4_5_6() {
+
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
         checkout.searchBtn().click();
@@ -104,6 +105,7 @@ public class CheckoutTest extends CommonAPI {
         checkout.checkOut().click();
         checkout.guestBtn().click();
         checkout.continueBtn().click();
+
         checkout.firstName().sendKeys("Salamo");
         checkout.lastName().sendKeys("Amazigh");
         checkout.email().sendKeys("dz@gmail.com");
@@ -136,4 +138,42 @@ public class CheckoutTest extends CommonAPI {
 
 
     }
+
+    @Test(enabled = false)
+    public void checkoutTest6_Er1_2() {
+        Checkout checkout = new Checkout();
+        checkout.searchField().sendKeys("Imac");
+        checkout.searchBtn().click();
+        checkout.addToCart().click();
+        checkout.shoppingCart().click();
+        checkout.checkOut().click();
+        checkout.guestBtn().click();
+        checkout.continueBtn().click();
+
+
+        Assert.assertTrue(checkout.billingOption().isSelected());
+
+        checkout.firstName().sendKeys("Salamo");
+        checkout.lastName().sendKeys("Amazigh");
+        checkout.email().sendKeys("dz@gmail.com");
+        checkout.phone().sendKeys("123456");
+        checkout.address().sendKeys("Down_Hell");
+        checkout.city().sendKeys("Jersey_city");
+        checkout.postCode().sendKeys("07304");
+        checkout.selectOptionFromCountry("United States");
+        checkout.selectOptionFromState("New Jersey");
+        checkout.billingOption().click();
+        checkout.continueBilling().click();
+        waitFor(4);
+
+        Assert.assertTrue(checkout.billingFirstName().isDisplayed());
+        Assert.assertTrue(checkout.billingLastName().isDisplayed());
+        Assert.assertTrue(checkout.billingAddress().isDisplayed());
+        Assert.assertTrue(checkout.billingCity().isDisplayed());
+        Assert.assertTrue(checkout.billingPostCode().isDisplayed());
+        Assert.assertTrue(checkout.billingCountry().isDisplayed());
+        Assert.assertTrue(checkout.billingState().isDisplayed());
+    }
+
+
 }

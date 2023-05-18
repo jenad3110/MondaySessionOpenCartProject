@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="review plugins in the pom xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,11 +300,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
     <MESSAGE value="First Commit" />
-    <MESSAGE value="Make-up" />
     <MESSAGE value="Update" />
-    <MESSAGE value="Parallel_Testing fixed issue" />
-    <MESSAGE value="review plugins in the pom xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="review plugins in the pom xml" />
+    <MESSAGE value="Make-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make-up" />
+
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
