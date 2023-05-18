@@ -60,10 +60,12 @@ public class CommonAPI {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
+
         log.info("AfterMethod opened");
+        log.info("The test case  '"+result.getName() +"' has been executed");
         takeSCForFailedTest(result);
         driver.quit();
-        log.info("driver quit method executed ");
+        log.info("driver.quit() method executed ");
         log.info("AfterMethod closed");
 
     }
