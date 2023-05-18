@@ -77,6 +77,8 @@ public class CommonAPI {
             driver = new ChromeDriver(options);
             log.info("Browser used: Chrome");
         } else if (browserName.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.firefox.logfile", "/dev/null");
+            System.setProperty("webdriver.firefox.loglevel", "OFF");
 
             driver = new FirefoxDriver();
             log.info("Browser used: FireFox");

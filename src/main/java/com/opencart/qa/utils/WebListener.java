@@ -106,7 +106,6 @@ import java.util.Arrays;
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
         // Leave it blank
     }
-
     @Override
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
         log.info("Found element: {}", by);
