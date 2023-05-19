@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="logs added in after method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/TestDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/TestDataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/RegisterAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/RegisterAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +77,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml">
+  <component name="RunManager" selected="TestNG.RegisterAccountTest.registerANewAccountUsingDataProvider">
+    <configuration name="TestDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.utils.dataprovider.TestDataGenerator" />
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.utils.dataprovider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,26 +98,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Salim.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Parallel_Testing.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,7 +112,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterAccountTest.registerANewAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest.myTestMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.utils.dataprovider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart.qa.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.utils.MyTest" />
+      <option name="METHOD_NAME" value="myTestMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterAccountTest.myTestMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.opencart.qa" />
       <option name="MAIN_CLASS_NAME" value="com.opencart.qa.RegisterAccountTest" />
-      <option name="METHOD_NAME" value="registerANewAccount" />
+      <option name="METHOD_NAME" value="myTestMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.checkoutTest5_Er3_4_5_6" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterAccountTest.registerANewAccountUsingDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +157,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.Test1" />
-      <option name="METHOD_NAME" value="checkoutTest5_Er3_4_5_6" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.RegisterAccountTest" />
+      <option name="METHOD_NAME" value="registerANewAccountUsingDataProvider" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -151,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccountUsingDataProvider" />
+        <item itemvalue="TestNG.RegisterAccountTest.myTestMethod" />
+        <item itemvalue="TestNG.MyTest.myTestMethod" />
+        <item itemvalue="Application.TestDataGenerator" />
         <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" />
-        <item itemvalue="TestNG.Test1.checkoutTest5_Er3_4_5_6" />
-        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
-        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684434652006</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="logs added in after method">
+      <created>1684435121598</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684435121598</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
