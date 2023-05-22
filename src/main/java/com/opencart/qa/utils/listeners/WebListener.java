@@ -1,4 +1,4 @@
-package com.opencart.qa.utils;
+package com.opencart.qa.utils.listeners;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,35 +10,35 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import java.util.Arrays;
 
-    public class WebListener implements WebDriverEventListener {
+public class WebListener implements WebDriverEventListener {
 
-            private static final Logger log = LogManager.getLogger(WebListener.class);
-            private String currentStepDescription;
+    private static final Logger log = LogManager.getLogger(WebListener.class);
+    private String currentStepDescription;
 
-        private void logStep(String stepDescription, WebElement element) {
-            String elementInfo = getElementInfo(element);
-            log.info("{} - Element: {}", stepDescription, elementInfo);
-        }
+    private void logStep(String stepDescription, WebElement element) {
+        String elementInfo = getElementInfo(element);
+        log.info("{} - Element: {}", stepDescription, elementInfo);
+    }
 
-        private String getElementInfo(WebElement element) {
-            String text = element.toString();
-            String delimiter = "->"; // Multi-character delimiter
-            int startIndex = text.indexOf(delimiter) + delimiter.length(); // Adding the length of the delimiter
-            String partialString = text.substring(startIndex);
+    private String getElementInfo(WebElement element) {
+        String text = element.toString();
+        String delimiter = "->"; // Multi-character delimiter
+        int startIndex = text.indexOf(delimiter) + delimiter.length(); // Adding the length of the delimiter
+        String partialString = text.substring(startIndex);
 
-                return partialString;
-            }
+        return partialString;
+    }
 
-        @Override
-        public void beforeClickOn(WebElement element, WebDriver driver) {
-            // Set the current step description before clicking on the element
-            currentStepDescription = "Clicking on element";
-        }
+    @Override
+    public void beforeClickOn(WebElement element, WebDriver driver) {
+        // Set the current step description before clicking on the element
+        currentStepDescription = "Clicking on element";
+    }
 
-        @Override
-        public void afterClickOn(WebElement element, WebDriver driver) {
-            logStep(currentStepDescription, element);
-        }
+    @Override
+    public void afterClickOn(WebElement element, WebDriver driver) {
+        logStep(currentStepDescription, element);
+    }
 
 
     @Override
@@ -132,7 +132,7 @@ import java.util.Arrays;
     @Override
     public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
         //log.info("Changed value of element: {} to: {}", element, Arrays.toString(keysToSend));
-        log.info("Changed value of element: {} to: {}","["+getElementInfo(element),Arrays.toString(keysToSend));
+        log.info("Changed value of element: {} to: {}", "[" + getElementInfo(element), Arrays.toString(keysToSend));
     }
 
     @Override
@@ -179,9 +179,6 @@ import java.util.Arrays;
     public void afterGetText(WebElement element, WebDriver driver, String text) {
 
     }
-
-
-
 
 
 }

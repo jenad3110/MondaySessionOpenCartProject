@@ -1,7 +1,7 @@
 package com.opencart.qa.base;
 
 import com.opencart.qa.locators.Locator;
-import com.opencart.qa.utils.WebListener;
+import com.opencart.qa.utils.listeners.WebListener;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,9 +15,10 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -26,15 +27,11 @@ import java.time.Duration;
 import java.util.Date;
 
 public class CommonAPI {
-
-
     private static final Logger log = LogManager.getLogger(CommonAPI.class);
 
-
     public static WebListener webListener;
-    EventFiringWebDriver e_driver;
-
     public static WebDriver driver;
+    EventFiringWebDriver e_driver;
 
     private void setWebListener() {
         log.info("WebListener Method opened");
@@ -47,13 +44,13 @@ public class CommonAPI {
 
     @Parameters({"browser"})
     @BeforeMethod
-    public void setupBrowser(String browserName) {
+    public void setupBrowser(@Optional("chrome")String browserName) {
 
         log.info("BeforeMethod opened");
 
         initializeBrowser(browserName);
         setWebListener();
-        log.info(getClass().getSimpleName()+" Class is selected");
+        log.info(getClass().getSimpleName() + " Class is selected");
         driver.get("https://tutorialsninja.com/demo/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -64,9 +61,12 @@ public class CommonAPI {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
+
         log.info("AfterMethod opened");
+        log.info("The test case  '"+result.getName() +"' has been executed");
         takeSCForFailedTest(result);
         driver.quit();
+        log.info("driver.quit() method executed ");
         log.info("AfterMethod closed");
 
     }
@@ -75,26 +75,24 @@ public class CommonAPI {
     public void initializeBrowser(String browserName) {
         log.info("Method initializeBrowser opened");
 
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
         if (browserName.equalsIgnoreCase("chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             log.info("Browser used: Chrome");
-        }
 
-        else if (browserName.equalsIgnoreCase("firefox")){
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.firefox.logfile", "/dev/null");
+            System.setProperty("webdriver.firefox.loglevel", "OFF");
 
             driver = new FirefoxDriver();
-        log.info("Browser used: FireFox");}
-
-        else if (browserName.equalsIgnoreCase("edge")){
+            log.info("Browser used: FireFox");
+        } else if (browserName.equalsIgnoreCase("edge")) {
 
             driver = new EdgeDriver();
-        log.info("Browser used: Edge");}
-
-        else {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
+            log.info("Browser used: Edge");
+        } else {
             driver = new ChromeDriver(options);
             log.warn("Check the syntax of the browser");
             log.info("Default browser 'Chrome' is selected");
@@ -138,7 +136,7 @@ public class CommonAPI {
     public void waitFor(int seconds) {
 
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -182,9 +180,6 @@ public class CommonAPI {
     }
 
 
-
-
-
     private By ByLocatorType(Locator locatorType, String value) {
 
         switch (locatorType) {
@@ -195,7 +190,7 @@ public class CommonAPI {
                 return By.name(value);
             case PARTIALLINKTEXT:
                 return By.partialLinkText(value);
-            case LINKEDTEXT:
+            case LINKTEXT:
                 return By.linkText(value);
             case CSS:
                 return By.cssSelector(value);
@@ -206,12 +201,11 @@ public class CommonAPI {
             case TAGNAME:
                 return By.tagName(value);
 
-        }return null;
+        }
+        return null;
 
 
     }
-
-
 
 
 }
