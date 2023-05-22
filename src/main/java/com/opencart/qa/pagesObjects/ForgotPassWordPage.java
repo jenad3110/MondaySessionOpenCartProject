@@ -17,7 +17,7 @@ public class ForgotPassWordPage extends CommonAPI {
 
     @FindBy(xpath = "//div[@id='top-links']/ul/li[2]/a/span")
     WebElement MyAccount;
-    @FindBy(xpath = "//*[@id=\"top-links\"]/ul/li[2]/ul/li[2]/a")
+    @FindBy(linkText = "Login")
     WebElement Login;
 
 
