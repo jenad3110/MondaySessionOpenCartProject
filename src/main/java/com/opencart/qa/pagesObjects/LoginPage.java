@@ -11,6 +11,7 @@ public class LoginPage extends CommonAPI {
     By passwordField = By.id("input-password");
     By loginBtn = By.xpath("//input[@class='btn btn-primary']");
 
+    By loginOnTheRightMenu = By.linkText("Login");
 
     public WebElement emailField() {
 
@@ -25,6 +26,10 @@ public class LoginPage extends CommonAPI {
     public WebElement loginBtn() {
 
         return driver.findElement(loginBtn);
+    }
+
+    public WebElement loginOnTheRightMenuField() {
+        return driver.findElement(loginOnTheRightMenu);
     }
 
 
