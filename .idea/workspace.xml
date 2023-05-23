@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="logs added in after method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/TestDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/TestDataProviders.java" afterDir="false" />
+    <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="data provider package + data generator for creating new account + @optional for browser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/RegisterAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/RegisterAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/Checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/dataprovider/TestDataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/dataprovider/TestDataProviders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.RegisterAccountTest.registerANewAccountUsingDataProvider">
+  <component name="RunManager" selected="TestNG.RegisterAccountTest.registerNewAccountUsingDataProvider">
     <configuration name="TestDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.opencart.qa.utils.dataprovider.TestDataGenerator" />
       <module name="MondaySessionOpenCartProject" />
@@ -134,7 +130,7 @@
       <module name="MondaySessionOpenCartProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="PATTERN" value="com.opencart.qa.pagesObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,17 +144,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterAccountTest.registerANewAccountUsingDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterAccountTest.registerNewAccountUsingDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="PATTERN" value="com.opencart.qa.pagesObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.opencart.qa" />
       <option name="MAIN_CLASS_NAME" value="com.opencart.qa.RegisterAccountTest" />
-      <option name="METHOD_NAME" value="registerANewAccountUsingDataProvider" />
+      <option name="METHOD_NAME" value="registerNewAccountUsingDataProvider" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,7 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccountUsingDataProvider" />
+        <item itemvalue="TestNG.RegisterAccountTest.registerNewAccountUsingDataProvider" />
         <item itemvalue="TestNG.RegisterAccountTest.myTestMethod" />
         <item itemvalue="TestNG.MyTest.myTestMethod" />
         <item itemvalue="Application.TestDataGenerator" />
@@ -325,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684435121598</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="data provider package + data generator for creating new account + @optional for browser">
+      <created>1684510192083</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684510192083</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +349,8 @@
     <MESSAGE value="Make-up" />
     <MESSAGE value="resolve conflict" />
     <MESSAGE value="logs added in after method" />
-    <option name="LAST_COMMIT_MESSAGE" value="logs added in after method" />
+    <MESSAGE value="data provider package + data generator for creating new account + @optional for browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="data provider package + data generator for creating new account + @optional for browser" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
