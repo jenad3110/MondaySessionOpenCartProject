@@ -1,7 +1,7 @@
 package com.opencart.qa.base;
 
 import com.opencart.qa.locators.Locator;
-import com.opencart.qa.utils.WebListener;
+import com.opencart.qa.utils.listeners.WebListener;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -43,7 +44,7 @@ public class CommonAPI {
 
     @Parameters({"browser"})
     @BeforeMethod
-    public void setupBrowser(String browserName) {
+    public void setupBrowser(@Optional("chrome")String browserName) {
 
         log.info("BeforeMethod opened");
 
@@ -60,9 +61,12 @@ public class CommonAPI {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
+
         log.info("AfterMethod opened");
+        log.info("The test case  '"+result.getName() +"' has been executed");
         takeSCForFailedTest(result);
         driver.quit();
+        log.info("driver.quit() method executed ");
         log.info("AfterMethod closed");
 
     }
