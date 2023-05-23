@@ -7,7 +7,7 @@ public class TestDataProviders {
     public static Object[][] getUserData() {
         return new Object[][]{
 
-                {TestDataGenerator.generateFirstName(),
+                       {TestDataGenerator.generateFirstName(),
                         TestDataGenerator.generateLastName(),
                         TestDataGenerator.generatePhoneNumber(),
                         TestDataGenerator.generateEmail(),
