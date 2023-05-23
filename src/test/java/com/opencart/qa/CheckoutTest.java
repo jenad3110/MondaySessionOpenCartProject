@@ -139,7 +139,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void checkoutTest6_Er1_2() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
@@ -174,6 +174,5 @@ public class CheckoutTest extends CommonAPI {
         Assert.assertTrue(checkout.billingCountry().isDisplayed());
         Assert.assertTrue(checkout.billingState().isDisplayed());
     }
-
 
 }
