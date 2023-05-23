@@ -139,7 +139,7 @@ public class CheckoutTest extends CommonAPI {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void checkoutTest6_Er1_2() {
         Checkout checkout = new Checkout();
         checkout.searchField().sendKeys("Imac");
