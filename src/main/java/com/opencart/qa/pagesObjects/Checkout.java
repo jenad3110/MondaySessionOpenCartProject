@@ -13,7 +13,6 @@ public class Checkout extends CommonAPI {
     By checkoutButton = By.linkText("Checkout");
     By checkoutText = By.xpath("//*[@id='content']/p");
 
-
     By searchField = By.xpath("//*[@id='search']/input");
     By searchBtn = By.xpath("//*[@id='search']/span/button");
     By addToCart = By.xpath("//span[contains(text(),'Add to Cart')]");
@@ -23,7 +22,6 @@ public class Checkout extends CommonAPI {
 
     By cartBtn = By.xpath("//*[@id='cart']/button");
     By checkoutSideBtn = By.xpath("//*[@id='cart']/ul/li[2]/div/p/a[2]/strong");
-
     By guestBtn = By.xpath("//input[@value='guest']");
     By continueBtn = By.xpath("//input[@id='button-account']");
     By billingOption = By.xpath("//input[@name='shipping_address']");
