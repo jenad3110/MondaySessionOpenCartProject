@@ -5,12 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08c81a55-8d69-4d2a-bd41-3aafd89ed5e2" name="Changes" comment="Parallel_Testing fixed issue">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/GiftCertificatesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/PurchaseAGiftCertificatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/CheckoutPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/GiftCertificatesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/LandingPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/PurchaseAGiftCertificateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/zohrasrunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_17_2023_11_05_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_17_2023_11_05_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_17_2023_11_04_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_17_2023_11_04_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/screenshotsFailedTest/checkoutTest5_Er3_4_5_6 05172023.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/screenshotsFailedTest/checkoutTest5_Er3_4_5_6 05172023.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/base/ParallelTestingCommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/utils/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/GiftCertificates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/opencart/qa/pagesObjects/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/opencart/qa/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/opencart/qa/ShoppingCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +45,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -45,6 +52,9 @@
         <option name="url" value="https://github.com/jenad3110/MondaySessionOpenCartProject.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -61,22 +71,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Salim&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hebib/MyLearning/Selenium_Learning&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
-  }
-}</component>
-  <component name="RunManager" selected="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml">
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="TestNG./Users/zohralamrani/IdeaProjects/MondaySessionOpenCartProject/src/test/resources/zohrasrunner.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,16 +83,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/Salim.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,9 +97,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftCertificatesTest.enterSenderAndRecipientInfo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MondaySessionOpenCartProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/mohamed.xml" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.opencart.qa" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.GiftCertificatesTest" />
+      <option name="METHOD_NAME" value="enterSenderAndRecipientInfo" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GiftCertificatesTest.testGiftCertificatesPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart.qa" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.GiftCertificatesTest" />
+      <option name="METHOD_NAME" value="testGiftCertificatesPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest.testGiftCertificatesPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.qa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opencart.qa" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.LandingPageTest" />
+      <option name="METHOD_NAME" value="testGiftCertificatesPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/zohralamrani/IdeaProjects/MondaySessionOpenCartProject/src/test/resources/zohrasrunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MondaySessionOpenCartProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/zohrasrunner.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -118,49 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterAccountTest.registerANewAccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.RegisterAccountTest" />
-      <option name="METHOD_NAME" value="registerANewAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1.checkoutTest5_Er3_4_5_6" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MondaySessionOpenCartProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.qa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.opencart.qa" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.qa.Test1" />
-      <option name="METHOD_NAME" value="checkoutTest5_Er3_4_5_6" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
+      <item itemvalue="TestNG.GiftCertificatesTest.enterSenderAndRecipientInfo" />
+      <item itemvalue="TestNG.GiftCertificatesTest.testGiftCertificatesPage" />
+      <item itemvalue="TestNG.LandingPageTest.testGiftCertificatesPage" />
+      <item itemvalue="TestNG./Users/zohralamrani/IdeaProjects/MondaySessionOpenCartProject/src/test/resources/zohrasrunner.xml" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/zohralamrani/IdeaProjects/MondaySessionOpenCartProject/src/test/resources/zohrasrunner.xml" />
+        <item itemvalue="TestNG.GiftCertificatesTest.enterSenderAndRecipientInfo" />
+        <item itemvalue="TestNG.LandingPageTest.testGiftCertificatesPage" />
+        <item itemvalue="TestNG.GiftCertificatesTest.testGiftCertificatesPage" />
         <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/Parallel_Testing.xml" />
-        <item itemvalue="TestNG.Test1.checkoutTest5_Er3_4_5_6" />
-        <item itemvalue="TestNG.C:/Users/hebib/MyLearning/MondaySessionOpenCartProject/src/test/resources/Salim.xml" />
-        <item itemvalue="TestNG.C:/Users/sron4/Downloads/MondaySessionOpenCartProject/src/test/resources/mohamed.xml" />
-        <item itemvalue="TestNG.RegisterAccountTest.registerANewAccount" />
       </list>
     </recent_temporary>
   </component>

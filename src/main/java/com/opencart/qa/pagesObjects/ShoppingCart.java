@@ -2,7 +2,7 @@ package com.opencart.qa.pagesObjects;
 
 import com.opencart.qa.base.CommonAPI;
 import org.openqa.selenium.*;
-
+import org.openqa.selenium.support.FindBy;
 
 
 public class ShoppingCart extends CommonAPI {
@@ -57,7 +57,16 @@ public class ShoppingCart extends CommonAPI {
         return shoppingCartEmptyText().getText();
     }
 
+    //Zohra's Region
+    @FindBy(xpath = "//div[@id='content']/h1")
+    public WebElement shoppingCartMessage;
 
+    @FindBy(xpath = "//div[@class='pull-right']/a")
+    public WebElement checkoutLink;
 
-
+    public CheckoutPage clickCheckout(){
+        click(checkoutLink);
+        return new CheckoutPage(driver);
+    }
+    //End Region
 }
