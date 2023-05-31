@@ -1,7 +1,9 @@
 package com.opencart.qa;
 
 import com.opencart.qa.base.CommonAPI;
+import com.opencart.qa.pagesObjects.CheckoutPage;
 import com.opencart.qa.pagesObjects.ShoppingCart;
+import org.checkerframework.checker.units.qual.C;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -97,6 +99,16 @@ public class ShoppingCartTest extends CommonAPI {
 
 
     }
-
 */
+
+    //Zohra's Region
+    @Test(enabled = false)
+        public void validateShoppingCartMessage() {
+        ShoppingCart shoppingCart = new ShoppingCart();
+
+        String actualText = shoppingCart.shoppingCartMessage.getText();
+        String expectedText = "Shopping Cart  (0.00kg)";
+        Assert.assertEquals(actualText, expectedText);
+    }
+    //End Region
 }
